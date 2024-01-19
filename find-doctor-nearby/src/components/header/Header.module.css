@@ -1,0 +1,10 @@
+.topContainer {
+    background-color: #528BBF;
+    max-width: 370px;
+    margin: 10px 353px 10px;
+    border-radius: 5px;
+  }
+  
+  .title {
+    padding: 5px;
+  }

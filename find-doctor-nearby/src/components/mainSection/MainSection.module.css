@@ -1,0 +1,97 @@
+.mainSection {
+    background-color: #6E9CC7;
+    width: 1042px;
+    height: 290px;
+    position: absolute;
+    top: 180px;
+    left: 3%;
+    border-radius: 10px;
+    padding-top: 50px;
+    padding-left: 20px;
+    display: flex;
+  }
+  
+  .fmainSection {
+    display: flex;
+    gap: 40px;
+    flex-direction: column;
+  }
+  
+  .fullSection {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    justify-content: space-between;
+  }
+  
+  .fullSection img {
+    height: 26px;
+    width: 26px;
+    margin-top: 10px;
+  }
+  
+  .sectionDoctor,
+  .sectionLocation {
+    display: flex;
+    gap: 10px;
+  }
+  
+  .sectionDoctor input,
+  .sectionLocation input {
+    border-radius: 8px;
+    background-color: #DCE3F3;
+  }
+  
+  .iDoctor::placeholder,
+  .iLocation::placeholder {
+    font-size: 15px;
+    text-align: center;
+    color: #000000;
+    font-weight: 600;
+    height: 40px;
+  }
+  
+  .searchBtn img {
+    background-color: #014ED5;
+    padding: 5px;
+    border-radius: 10px;
+  }
+  
+  .sectionText {
+    color: #000000;
+    font-weight: 500;
+  }
+  
+  .sectionList {
+    display: flex;
+    align-items: center;
+    gap: 40px;
+    padding-top: 20px;
+  }
+  
+  .departmentList {
+    background-color: #DCE3F3;
+    width: 157px;
+    border-radius: 5px;
+    height: 30px;
+    text-align: center;
+  }
+  
+  .sectionList button {
+    background-color: #08337D;
+    border-radius: 10px;
+    width: 60px;
+    color: #ffffff;
+    padding: 3px;
+  }
+  
+  .smainSection {
+    position: relative;
+    left: 18%;
+    top: 0%;
+  }
+  
+  .firstImageHero img {
+    width: 200px;
+    height: 300px;
+  }
