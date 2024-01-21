@@ -1,0 +1,20 @@
+.aboutSection {
+    background-color: #738CE2;
+    height: 340px;
+    padding-left: 70px;
+    padding-top: 30px;
+  }
+  
+  .aboutSection h1 {
+    font-size: 35px;
+    font-weight: 600;
+    line-height: 52.5px;
+    color: #000000;
+  }
+  
+  .aboutSection p {
+    color: #000000;
+    font-size: 20px;
+    font-weight: 600;
+    padding-top: 20px;
+  }

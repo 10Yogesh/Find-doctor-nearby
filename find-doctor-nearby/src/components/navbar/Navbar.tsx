@@ -1,5 +1,4 @@
 import styles from "./Navbar.module.css";
-import Herosection from "../mainSection/MainSection";
 const menus = [
   {
     name: "Home",
@@ -38,7 +37,6 @@ const Navbar = () => {
             <button className={styles.signupBtn}>Signup</button>
           </div>
         </div>
-        <Herosection />
       </div>
     </>
   );
