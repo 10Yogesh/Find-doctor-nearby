@@ -8,7 +8,7 @@
   background-color: #D9D9D9;;
 }
 
-.firstWrapper {
+.searchWrapper .firstWrapper {
   background-color: #6E9CC7;
   padding: 30px;
   padding-left: clamp(3rem, 2.3500rem + 3.2500vw, 6.25rem);
@@ -17,6 +17,8 @@
   max-width: 100%;
   height: fit-content;
   margin-top: 50px;
+  
+
 }
 
 .topSearch {
@@ -104,6 +106,154 @@
   width: 100%;
 
 }
+
+.secondSection .secondSecWrapper{
+  display: flex;
+  padding: 50px 100px;
+  justify-content: space-around;
+  
+}
+
+.secondSecWrapper .firstWrapper h2{
+  font-weight: 600;
+  font-size: 40px;
+  line-height: 60px;
+  max-width: 400px;
+  
+}
+
+.firstWrapper .searchHospital{
+  display: flex;
+  padding: 40px 0 20px 0 ;
+}
+
+.searchBox{
+  background-color: #DCE3F3;
+  border-radius: 10px;
+  padding: 15px 8px;
+}
+
+.searchBox::placeholder{
+ font-weight: 600;
+ 
+}
+
+.sugestions li{
+  opacity: 41%;
+  font-size: 15px;
+}
+
+.rightImageContainer {
+  max-width: 300px;
+  margin: 0 auto;
+  
+}
+
+.imageLayer0, .imageLayer1, .imageLayer2 {
+  top: 50%;
+  left: 50px;
+}
+
+
+.imageCaption {
+  
+  padding-right: 250px;
+  text-align: end;
+  margin-top: 40px;
+
+}
+
+.specialHeader {
+  margin-top: 40px;
+}
+
+.specialContainer {
+  background-color: #D1D6E0;
+  padding-top: 20px;
+}
+
+.specialWrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 50px 30px 50px 30px;
+}
+
+h3 {
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 34px;
+  text-align: center;
+}
+
+.specialList {
+  background-color: #D1D6E0;
+}
+
+.lists {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.lists h4 {
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 18px;
+  margin-top: 5px;
+}
+
+.lists p {
+  font-weight: 600;
+  font-size: 12px;
+  line-height: 15px;
+  margin-top: 2px;
+}
+
+.footerSection {
+  background-color: #738CE2AD;
+}
+
+.footerWrapper {
+  padding: 20px 10px 40px 50px;
+}
+
+.footerInfo {
+  display: flex;
+  flex-direction: column;
+  padding-top: 25px;
+  padding-left: 5px;
+}
+
+@media screen and (max-width: 894px ){
+  .secondSecWrapper{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 894px ){
+  .specialContainer{
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+
+
+
+
+@media screen and (max-width: 360px ){
+  .searchHospital{
+    justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1260px ){
+  .searchWrapper .firstWrapper{
+    max-width: 900px;
+  }
+}
+
 
 @media screen and (max-width: 1160px) {
   .searchWrapper {
