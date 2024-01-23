@@ -1,37 +1,55 @@
-.navBar {
-  background-color: #d9d9d9;
-  height: 70px;
+
+.innernavbarWrapper {
+  padding: 20px 50px 10px 10px;
+  float: right;
   width: 100%;
+  background-color: #D9D9D9;
+  
+  
 }
 
 .navList {
   display: flex;
   gap: 40px;
-  float: right;
-  padding: 20px;
-  justify-content: space-between;
   align-items: center;
+  float: right;
+  padding: 15px;
 }
 
-.menuItem {
-  font-size: 20px;
-  font-weight: 500;
-  
+.hamburgerMenu {
+  display: none;
 }
 
-.navList button {
-  color: #ffffff;
-  margin-left: 10px;
-  padding: 3px;
-  width: 60px;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.8);
-  border-radius: 5px;
+.menuItem span {
+  font-size: clamp(1rem, 0.9500rem + 0.2500vw, 1.25rem);
+  font-weight: 600;
 }
 
-.loginBtn {
-  background-color: #000000;
+.navBtn Button {
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 1);
 }
 
-.signupBtn {
-  background-color: #004f95;
+@media screen and (max-width: 768px) {
+  .menuItem {
+    display: none;
+  }
+
+  .innernavbarWrapper {
+    width: 100%;
+    padding: 20px;
+  }
+
+  .navList {
+    display: flex;
+    margin-left: auto;
+    justify-content: space-between;
+  }
+
+
+  .hamburgerMenu {
+    display: block;
+    cursor: pointer;
+    font-size: 1.5rem;
+  }
 }

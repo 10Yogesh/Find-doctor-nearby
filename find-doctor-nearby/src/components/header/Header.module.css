@@ -1,16 +1,27 @@
-.topContainer {
-  background-color: #528bbf;
-  max-width: 746px;
-  margin: 10px 353px 10px;
-  border-radius: 5px;
-  top: 145px;
-  height: 75px;
-  display: flex;
-  justify-content: center; 
-  align-items: center;
+.headerWrapper {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 15px
 }
 
-.title {
+.hinnerWrapper {
+  padding-top: clamp(0.7rem, 0.6272rem + 0.3107vw, 1rem);
+  padding-left: clamp(10rem, 9.5146rem + 2.0712vw, 12rem);
+}
+
+
+.hinnerWrapper .topHeader {
+  font-size: clamp(2.25rem, 2.1375rem + 0.5625vw, 2.8125rem);
+  width: fit-content;
   padding: 5px;
-  
+  border-radius: 15px;
+}
+
+@media screen and (max-width: 768px) {
+  .hinnerWrapper {
+    display: flex;
+    justify-content: center;
+    padding-left: 35px;
+    padding-right: clamp(3.125rem, 2.6699rem + 1.9417vw, 5rem);
+  }
 }

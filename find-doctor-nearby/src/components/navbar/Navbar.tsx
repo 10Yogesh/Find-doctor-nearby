@@ -1,44 +1,33 @@
+import { Button, ButtonGroup } from "@chakra-ui/react";
 import styles from "./Navbar.module.css";
-const menus = [
-  {
-    name: "Home",
-    label: "/home",
-  },
-  {
-    name: "Doctors",
-    label: "/doctors",
-  },
-  {
-    name: "FAQ",
-    label: "/faq",
-  },
-  {
-    name: "About",
-    label: "/about",
-  },
-  {
-    name: "Contact",
-    label: "/contact",
-  },
-];
+const menus = ["Home", "Doctors", "FAQ", "About", "Contact"];
 
 const Navbar = () => {
   return (
-    <>
-      <div className={styles.navBar}>
+    <div className={styles.navbarWrapper}>
+      <div className={styles.innernavbarWrapper}>
         <div className={styles.navList}>
+          <div className={styles.hamburgerMenu}>
+            <i className="fa-solid fa-bars"></i>
+          </div>
           {menus.map((menu, index) => (
             <div key={index} className={styles.menuItem}>
-              {<span>{menu.name}</span>}
+              {<span>{menu}</span>}
             </div>
           ))}
-          <div>
-            <button className={styles.loginBtn}>Login</button>
-            <button className={styles.signupBtn}>Signup</button>
+          <div className={styles.navBtn}>
+            <ButtonGroup gap="4">
+              <Button bg="black" color="white">
+                Login
+              </Button>
+              <Button bg="#004F95" color="white">
+                Sign up
+              </Button>
+            </ButtonGroup>
           </div>
         </div>
       </div>
-    </>
+    </div>
   );
 };
 
