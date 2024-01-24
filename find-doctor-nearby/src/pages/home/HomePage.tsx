@@ -15,7 +15,7 @@ const HomePage = () => {
         <div className={styles.firstWrapper}>
           <div className={styles.topSearch}>
             <div className={styles.searchSection}>
-              <img src="./images/search.png" alt="search" />
+              <Image src="./images/search.png" alt="search" />
               <input
                 type="text"
                 placeholder="Search by Doctors"
@@ -23,7 +23,7 @@ const HomePage = () => {
               />
             </div>
             <div className={styles.locationSection}>
-              <img src="./images/Location.png" alt="location" />
+              <Image src="./images/Location.png" alt="location" />
               <input
                 type="text"
                 placeholder="Search by Location"
@@ -31,17 +31,15 @@ const HomePage = () => {
               />
             </div>
             <div className={styles.wsearchSection}>
-              <img src="./images/wsearch.png" alt="search" />
+              <Image src="./images/wsearch.png" alt="search" />
             </div>
           </div>
           <div className={styles.sectionText}>
             <p>You may be looking for</p>
           </div>
           <div className={styles.bottomSearch}>
-            {list.map((item, index) => (
-              <div className={styles.departList} key={index}>
-                {item}
-              </div>
+            {list.map((item) => (
+              <Button>{item}</Button>
             ))}
             <Button bg="#08337DBA" color="white">
               More
@@ -49,9 +47,9 @@ const HomePage = () => {
           </div>
         </div>
         <div className={styles.secondWrapper}>
-          <img src="./images/ellipse.png" alt="ellipse" />
+          <Image src="./images/ellipse.png" alt="ellipse" />
           <div className={styles.secondImgWrapper}>
-            <img src="./images/doctor.png" alt="image" />
+            <Image src="./images/doctor.png" alt="image" />
           </div>
         </div>
       </div>
@@ -60,10 +58,10 @@ const HomePage = () => {
       <div className={styles.secondSection}>
         <div className={styles.secondSecWrapper}>
           <div className={styles.firstWrapper}>
-            <h2>Find the right Doctor Right At Your Fingertips </h2>
+            <Heading>Find the right Doctor Right At Your Fingertips </Heading>
 
             <div className={styles.searchHospital}>
-              <img
+              <Image
                 src="./images/search.png"
                 alt="image"
                 className={styles.inputImg}
@@ -82,22 +80,33 @@ const HomePage = () => {
               </ul>
             </div>
           </div>
-          <div className={styles.secondWrapper}>
-            <div className={styles.rightImageContainer}>
-              <img
-                src="./images/Rectangle 22.png"
+
+          <div className={styles.rightHeroWrapper}>
+            <Image
+              src="./images/Rectangle 22.png"
+              alt="Rectangle"
+              className={styles.rectangle22}
+            />
+            <div className={styles.rightHeroImage}>
+              <Image
+                src="./images/Rectangle 23.png"
                 alt="Rectangle"
-                className={styles.imageLayer0}
+                className={styles.rectangle23}
               />
             </div>
+
+            <div className={styles.rightFrontImage}>
+              <Image
+                src="./images/image 1.png"
+                alt="Rectangle"
+                className={styles.image1}
+              />
+            </div>
+            <p>Top rated primary care physicians</p>
           </div>
         </div>
       </div>
-      <div>
-        <h3 className={styles.imageCaption}>
-          Top rated primary care physicians
-        </h3>
-      </div>
+
       {/* specialist section */}
       <div className={styles.specialHeader}>
         <h3>Search by Specialist</h3>

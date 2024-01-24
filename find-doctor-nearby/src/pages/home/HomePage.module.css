@@ -75,14 +75,7 @@
   gap: clamp(2rem, 1.4000rem + 3.0000vw, 5rem);
 }
 
-.departList {
-  background-color: #DCE3F3;
-  padding-top: 5px;
-  border-radius: 10px;
-  text-align: center;
-  font-weight: 600;
-  width: 100%;
-}
+
 
 .secondWrapper {
   position: relative;
@@ -143,25 +136,35 @@
   font-size: 15px;
 }
 
-.rightImageContainer {
+.rightHeroWrapper {
   max-width: 300px;
-  margin: 0 auto;
+  position: relative;
   
 }
 
-.imageLayer0, .imageLayer1, .imageLayer2 {
-  top: 50%;
-  left: 50px;
+.rightHeroImage {
+  position: absolute;
+  top: 0;
+}
+
+.rightFrontImage {
+  position: absolute;
+  top: 66px;
+  width: 65%;
+  left: 20%;
+}
+
+.rightFrontImage img {
+  align-items: center;
+}
+
+.rightHeroWrapper p {
+  text-align: center;
+  font-weight: 600;
+  padding-top: 60px;
 }
 
 
-.imageCaption {
-  
-  padding-right: 250px;
-  text-align: end;
-  margin-top: 40px;
-
-}
 
 .specialHeader {
   margin-top: 40px;
@@ -228,6 +231,17 @@ h3 {
   .secondSecWrapper{
     display: flex;
     flex-direction: column;
+  }
+}
+@media screen and (max-width: 842px) {
+  .secondSecWrapper {
+    flex-direction: column;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .rightFrontImage {
+    top: 60px;
   }
 }
 
