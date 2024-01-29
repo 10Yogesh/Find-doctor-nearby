@@ -1,11 +1,17 @@
-import styles from "./Footer.module.css";
+import { Box, Text } from "@chakra-ui/react";
 const Footer = () => {
   return (
-    <div className={styles.aboutSection}>
-      <h1>About us:</h1>
-      <p>email: youremail@gmail.com</p>
-      <p>mobile: +97 98xxxxxxxx10</p>
-    </div>
+    <Box bg="#738CE2AD" p="50px">
+      <Box>
+        <Text fontSize="4xl" fontWeight="600" size="lg">
+          About us:
+        </Text>
+        <Box fontSize="2xl" fontWeight="600" p="20px">
+          <Text>email: youremail@gmail.com </Text>
+          <Text py="15px">mobile: +91 98xxxxxx10</Text>
+        </Box>
+      </Box>
+    </Box>
   );
 };
 

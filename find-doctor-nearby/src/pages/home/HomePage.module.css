@@ -158,11 +158,11 @@
   align-items: center;
 }
 
-.rightHeroWrapper p {
+/* .rightHeroWrapper p {
   text-align: center;
   font-weight: 600;
   padding-top: 60px;
-}
+} */
 
 
 
@@ -198,19 +198,7 @@ h3 {
   justify-content: center;
 }
 
-.lists h4 {
-  font-weight: 600;
-  font-size: 16px;
-  line-height: 18px;
-  margin-top: 5px;
-}
 
-.lists p {
-  font-weight: 600;
-  font-size: 12px;
-  line-height: 15px;
-  margin-top: 2px;
-}
 
 .footerSection {
   background-color: #738CE2AD;

@@ -1,7 +1,20 @@
-import { Image, Button, SimpleGrid, Heading, Text } from "@chakra-ui/react";
+import {
+  Image,
+  Button,
+  SimpleGrid,
+  Heading,
+  Box,
+  Input,
+  Center,
+  Text,
+  Grid,
+  UnorderedList,
+  ListItem,
+} from "@chakra-ui/react";
 import Header from "../../components/header/Header";
 import Navbar from "../../components/navbar/Navbar";
 import styles from "./HomePage.module.css";
+import Footer from "../../components/footer/Footer";
 
 const list = ["Dentist", "Cardiologist", "Dermatologist", "Family Physicians"];
 
@@ -11,167 +24,167 @@ const HomePage = () => {
       <Header />
       <Navbar />
       {/* search section */}
-      <div className={styles.searchWrapper}>
-        <div className={styles.firstWrapper}>
-          <div className={styles.topSearch}>
-            <div className={styles.searchSection}>
+      <Box className={styles.searchWrapper}>
+        <Box className={styles.firstWrapper}>
+          <Box className={styles.topSearch}>
+            <Box className={styles.searchSection}>
               <Image src="./images/search.png" alt="search" />
-              <input
+              <Input
                 type="text"
                 placeholder="Search by Doctors"
                 className={styles.inputText}
               />
-            </div>
-            <div className={styles.locationSection}>
+            </Box>
+            <Box className={styles.locationSection}>
               <Image src="./images/Location.png" alt="location" />
-              <input
+              <Input
                 type="text"
                 placeholder="Search by Location"
                 className={styles.inputText}
               />
-            </div>
-            <div className={styles.wsearchSection}>
+            </Box>
+            <Box className={styles.wsearchSection}>
               <Image src="./images/wsearch.png" alt="search" />
-            </div>
-          </div>
-          <div className={styles.sectionText}>
-            <p>You may be looking for</p>
-          </div>
-          <div className={styles.bottomSearch}>
+            </Box>
+          </Box>
+          <Box className={styles.sectionText}>
+            <Text>You may be looking for</Text>
+          </Box>
+          <Box className={styles.bottomSearch}>
             {list.map((item) => (
               <Button>{item}</Button>
             ))}
             <Button bg="#08337DBA" color="white">
               More
             </Button>
-          </div>
-        </div>
-        <div className={styles.secondWrapper}>
+          </Box>
+        </Box>
+        <Box className={styles.secondWrapper}>
           <Image src="./images/ellipse.png" alt="ellipse" />
-          <div className={styles.secondImgWrapper}>
+          <Box className={styles.secondImgWrapper}>
             <Image src="./images/doctor.png" alt="image" />
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Box>
+      </Box>
 
       {/* second section */}
-      <div className={styles.secondSection}>
-        <div className={styles.secondSecWrapper}>
-          <div className={styles.firstWrapper}>
+      <Box className={styles.secondSection}>
+        <Box className={styles.secondSecWrapper}>
+          <Box className={styles.firstWrapper}>
             <Heading>Find the right Doctor Right At Your Fingertips </Heading>
 
-            <div className={styles.searchHospital}>
+            <Box className={styles.searchHospital}>
               <Image
                 src="./images/search.png"
                 alt="image"
                 className={styles.inputImg}
               />
-              <input
+              <Input
                 type="text"
                 placeholder="Search Nearest Hospital"
                 className={styles.searchBox}
               />
-            </div>
-            <div className={styles.sugestions}>
-              <ul>
-                <li>We are here to hear and heal your health</li>
-                <li>It is not about the money</li>
-                <li>More than treating patients</li>
-              </ul>
-            </div>
-          </div>
+            </Box>
+            <Box className={styles.sugestions}>
+              <UnorderedList>
+                <ListItem>We are here to hear and heal your health</ListItem>
+                <ListItem>It is not about the money</ListItem>
+                <ListItem>More than treating patients</ListItem>
+              </UnorderedList>
+            </Box>
+          </Box>
 
-          <div className={styles.rightHeroWrapper}>
+          <Box className={styles.rightHeroWrapper}>
             <Image
               src="./images/Rectangle 22.png"
               alt="Rectangle"
               className={styles.rectangle22}
             />
-            <div className={styles.rightHeroImage}>
+            <Box className={styles.rightHeroImage}>
               <Image
                 src="./images/Rectangle 23.png"
                 alt="Rectangle"
                 className={styles.rectangle23}
               />
-            </div>
+            </Box>
 
-            <div className={styles.rightFrontImage}>
+            <Box className={styles.rightFrontImage}>
               <Image
                 src="./images/image 1.png"
                 alt="Rectangle"
                 className={styles.image1}
               />
-            </div>
-            <p>Top rated primary care physicians</p>
-          </div>
-        </div>
-      </div>
+            </Box>
+            <Text w="500px" p={14}>
+              Top rated primary care physicians
+            </Text>
+          </Box>
+        </Box>
+      </Box>
 
       {/* specialist section */}
-      <div className={styles.specialHeader}>
-        <h3>Search by Specialist</h3>
-      </div>
+      <Center>
+        <Text fontSize="3xl" fontWeight="700" py="20px">
+          Search by Specialist
+        </Text>
+      </Center>
 
-      <div className={styles.specialContainer}>
-        <div className={styles.specialWrapper}>
-          <div className={styles.specialList}>
+      <Box className={styles.specialContainer}>
+        <Grid className={styles.specialWrapper}>
+          <Box className={styles.specialList}>
             <SimpleGrid minChildWidth="120px" spacing="40px">
-              <div className={styles.lists}>
+              <Box className={styles.lists}>
                 <Image
                   src="./images/Rectangle 17.png"
                   alt="specialist"
                   className={styles.imageGroup}
                 />
-                <h4>Dr: Name Name</h4>
-                <p>Doctor degree name</p>
-              </div>
+                <Text fontSize="2xl" fontWeight={600}>
+                  Dr: Name Name
+                </Text>
+                <Text>Doctor degree name</Text>
+              </Box>
 
-              <div className={styles.lists}>
+              <Box className={styles.lists}>
                 <Image
                   src="./images/Rectangle 18.png"
                   alt="specialist"
                   className={styles.imageGroup}
                 />
-                <h4>Dr: Name Name</h4>
-                <p>Doctor degree name</p>
-              </div>
+                <Text fontSize="2xl" fontWeight={600}>
+                  Dr: Name Name
+                </Text>
+                <Text>Doctor degree name</Text>
+              </Box>
 
-              <div className={styles.lists}>
+              <Box className={styles.lists}>
                 <Image
                   src="./images/Rectangle 19.png"
                   alt="specialist"
                   className={styles.imageGroup}
                 />
-                <h4>Dr: Name Name</h4>
-                <p>Doctor degree name</p>
-              </div>
+                <Text fontSize="2xl" fontWeight={600}>
+                  Dr: Name Name
+                </Text>
+                <Text>Doctor degree name</Text>
+              </Box>
 
-              <div className={styles.lists}>
+              <Box className={styles.lists}>
                 <Image
                   src="./images/Rectangle 20.png"
                   alt="specialist"
                   className={styles.imageGroup}
                 />
-                <h4>Dr: Name Name</h4>
-                <p>Doctor degree name</p>
-              </div>
+                <Text fontSize="2xl" fontWeight={600}>
+                  Dr: Name Name
+                </Text>
+                <Text>Doctor degree name</Text>
+              </Box>
             </SimpleGrid>
-          </div>
-        </div>
-      </div>
-      <div className={styles.footerSection}>
-        <div className={styles.footerWrapper}>
-          <Heading size="2xl">About us:</Heading>
-          <div className={styles.footerInfo}>
-            <Text fontSize="md" as="b">
-              email: youremail@gmail.com
-            </Text>
-            <Text fontSize="md" as="b">
-              mobile: +91 98xxxxxxxx10
-            </Text>
-          </div>
-        </div>
-      </div>
+          </Box>
+        </Grid>
+      </Box>
+      <Footer></Footer>
     </>
   );
 };

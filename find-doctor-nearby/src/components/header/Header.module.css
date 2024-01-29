@@ -1,24 +1,6 @@
-.headerWrapper {
-  max-width: 1300px;
-  margin: 0 auto;
-  padding: 15px
-}
-
-.hinnerWrapper {
-  padding-top: clamp(0.7rem, 0.6272rem + 0.3107vw, 1rem);
-  padding-left: clamp(10rem, 9.5146rem + 2.0712vw, 12rem);
-}
 
 
-.hinnerWrapper .topHeader {
-  font-size: clamp(2.25rem, 2.1375rem + 0.5625vw, 2.8125rem);
-  width: fit-content;
-  padding: 5px;
-  border-radius: 15px;
-  font-family: 'Stoke', serif;
-}
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 765px) {
   .hinnerWrapper {
     display: flex;
     justify-content: center;

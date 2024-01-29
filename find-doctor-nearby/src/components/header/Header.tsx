@@ -1,14 +1,14 @@
 import styles from "./Header.module.css";
-import { Heading } from "@chakra-ui/react";
+import { Heading, Box, Container } from "@chakra-ui/react";
 const Header = () => {
   return (
-    <div className={styles.headerWrapper}>
-      <div className={styles.hinnerWrapper}>
-        <Heading bg="#528BBF" className={styles.topHeader}>
+    <Box p={5} className={styles.hinnerWrapper}>
+      <Container borderRadius="10px" p={5} maxW="715px" bg="#528BBF">
+        <Heading size="3xl" noOfLines={1}>
           Find Doctors Near By
         </Heading>
-      </div>
-    </div>
+      </Container>
+    </Box>
   );
 };
 
